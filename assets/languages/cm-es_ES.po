@@ -1,0 +1,281 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: EU Cookie Muncher\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-01 11:00+0100\n"
+"PO-Revision-Date: 2013-02-19 15:55-0000\n"
+"Last-Translator: Scott Evans @scottsweb <translate@scott.ee>\n"
+"Language-Team: @scottsweb <translate@scott.ee>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"Language: en_GB\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: assets/inc/cookie-admin.php:39
+msgid ""
+"This website would like to store cookies on your computer. We use cookies to "
+"make the site and your experience better."
+msgstr ""
+"Este sitio quisiera guardar 'cookies' en su computadora. Usamos cookies para "
+"mejorar a nuestro sitio y su experiencia."
+
+#: assets/inc/cookie-admin.php:41
+msgid "Find out more &raquo;"
+msgstr "Averiguar más &raquo;"
+
+#: assets/inc/cookie-admin.php:43 assets/inc/cookie-theme.php:103
+msgid "Accept Cookies"
+msgstr "Aceptar Cookies"
+
+#: assets/inc/cookie-admin.php:73
+msgid "Settings"
+msgstr "Ajustes"
+
+#: assets/inc/cookie-admin.php:74
+msgid "Support"
+msgstr "Soporte"
+
+#: assets/inc/cookie-admin.php:75
+msgid "Twitter"
+msgstr "Twitter"
+
+#: assets/inc/cookie-admin.php:104 assets/inc/cookie-admin.php:202
+msgid "EU Cookie Muncher"
+msgstr "EU Cookie Muncher"
+
+#: assets/inc/cookie-admin.php:104
+msgid "Cookie Muncher"
+msgstr "Cookie Muncher"
+
+#: assets/inc/cookie-admin.php:121
+msgid "Tips"
+msgstr "Consejos"
+
+#: assets/inc/cookie-admin.php:129
+msgid "To get the most out of this plugin take note of the following tips:"
+msgstr ""
+"Para aprovechar el máximo de este plugin, tengan los consejos siguientes en "
+"cuenta: "
+
+#: assets/inc/cookie-admin.php:132
+msgid ""
+"<strong>Message:</strong> Keep the notification message short and link "
+"through to a deeper page detailing cookie use."
+msgstr ""
+
+#: assets/inc/cookie-admin.php:133
+msgid ""
+"<strong>Position:</strong> Ensure the notification position does not cover "
+"crucial areas of your site."
+msgstr ""
+
+#: assets/inc/cookie-admin.php:134
+msgid ""
+"<strong>Colour:</strong> Ensure there is plenty of contrast between your "
+"colour choices for better usability."
+msgstr ""
+
+#: assets/inc/cookie-admin.php:135
+msgid ""
+"<strong>CSS:</strong> Copy the /assets/css/cookie_muncher.css file to your "
+"theme folder to completely customise the look and feel."
+msgstr ""
+
+#: assets/inc/cookie-admin.php:136
+msgid ""
+"<strong>Shortcode:</strong> Use the <strong>[cookie_button]</strong> "
+"shortcode on your policy page to allow visitors to change their settings."
+msgstr ""
+
+#: assets/inc/cookie-admin.php:204
+msgid "General"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:215
+msgid "Mode"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:218
+msgid "Opt Out (implied consent)"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:219
+msgid "Opt In"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:221
+msgid "Make the user opt in or out to cookies."
+msgstr ""
+
+#: assets/inc/cookie-admin.php:226
+msgid "Apply to visitors in the EU only"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:228
+msgid ""
+"Will attempt to determine current visitors location based on IP address."
+msgstr ""
+
+#: assets/inc/cookie-admin.php:233
+msgid "Block Adverts"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:235
+msgid ""
+"Remove adverts from your site (e.g. Google Adsense) until cookies are "
+"accepted."
+msgstr ""
+
+#: assets/inc/cookie-admin.php:240
+msgid "Message"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:243
+msgid "What would you like your message to say? HTML is supported."
+msgstr ""
+
+#: assets/inc/cookie-admin.php:248
+msgid "Link to Page"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:255
+msgid ""
+"Choose a page where you provide more information about your cookie policy."
+msgstr ""
+
+#: assets/inc/cookie-admin.php:260
+msgid "Link Text"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:263
+msgid "Link text for the page chosen above."
+msgstr ""
+
+#: assets/inc/cookie-admin.php:269
+msgid "Hide Button"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:271
+msgid ""
+"In opt out mode you may wish to hide the button from the popup. If hidden "
+"use the shortcode <strong>[cookie_button]</strong> on your cookie policy "
+"page."
+msgstr ""
+
+#: assets/inc/cookie-admin.php:277
+msgid "Button Text"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:280
+msgid "Text for the \"accept cookies\" or \"decline cookies\" button."
+msgstr ""
+
+#: assets/inc/cookie-admin.php:286
+msgid "Design"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:291
+msgid "Notification Position"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:294
+msgid "Top Left"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:295
+msgid "Top Right"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:296
+msgid "Bottom Left"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:297
+msgid "Bottom Right"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:298
+msgid "Top (Full Width)"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:299
+msgid "Bottom (Full Width)"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:301
+msgid "Where on screen the screen should the notification appear?"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:306
+msgid "Notification Timeout"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:309
+msgid "Indefinately"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:310
+msgid "5 Seconds"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:311
+msgid "10 Seconds"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:312
+msgid "15 Seconds"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:313
+msgid "30 Seconds"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:314
+msgid "60 Seconds"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:316
+msgid "How long should the notification remain on screen?"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:323
+msgid ""
+"Custom colour options are being overridden by <strong>cookie_muncher.css</"
+"strong> in your theme directory."
+msgstr ""
+
+#: assets/inc/cookie-admin.php:329 assets/inc/cookie-admin.php:331
+msgid "Notification Background Colour"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:340 assets/inc/cookie-admin.php:342
+msgid "Notification Font Colour"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:351 assets/inc/cookie-admin.php:353
+msgid "Notification Link Colour"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:362 assets/inc/cookie-admin.php:364
+msgid "Notification Link Hover Colour"
+msgstr ""
+
+#: assets/inc/cookie-admin.php:377
+msgid "Save Changes"
+msgstr "Gaurdar Cambios"
+
+#: assets/inc/cookie-shortcode.php:54
+msgid "Enable Cookies on this website"
+msgstr "Habilitar Cookies en este sitio"
+
+#: assets/inc/cookie-shortcode.php:58
+msgid "Disable Cookies on this website"
+msgstr "Deshabilitar Cookies en este sitio"
+
+#: assets/inc/cookie-theme.php:76
+msgid "Decline Cookies"
+msgstr "Rechazar Cookies"

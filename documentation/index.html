@@ -1,0 +1,252 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>EU Cookie Muncher</title>
+	<meta name="description" content="Make your WordPress website comply with the EU Cookie Directive." /> 
+	<meta name="keywords" content="wordpress, plugin, color, colour, branding, logos, logo, design, brand, white, label, custom, customize, admin, menu" /> 
+	<meta name="author" content="Scott Evans: http://scott.ee" /> 
+
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">Documentation</h3>
+		
+		<hr>
+		
+		<h1 class="center">EU Cookie Muncher</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 05/05/2012<br>
+					By: Scott Evans<br>
+					Web: <a href="http://scott.ee">scott.ee</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing this plugin. If you have any questions that are beyond the scope of this help file, please feel free to email <a href="http://codecanyon.net/user/scottsweb?ref=scottsweb">via my user page</a>. Thanks again!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#about">About</a></li>
+			<li><a href="#installation">Installation</a></li>
+			<li><a href="#cookie-muncher">Cookie Muncher</a></li>
+			<li><a href="#tips">Tips</a></li>
+			<li><a href="#changelog">Changelog</a></li>
+			<li><a href="#upgrade">Upgrading</a></li>
+			<li><a href="#credits">Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="about"><strong>A) About</strong> - <a href="#toc">top</a></h3>
+		<p>From May 2011 a new privacy law came into effect across the EU. The law requires that websites ask visitors for consent to use most web cookies. This plugin will make your site compliant at the touch of a button.</p>
+
+		<h5>About the Law</h5>
+		<p>
+		The law was created with the best of intentions but its implementation has not been very well thought out. Different countries within the EU also require different approaches. The short of it all is that any cookies that are not essential for the websites function should not be set without the express permission of the user first. 
+		Essential cookies include those for logging in and shopping carts. Non essential cookies are generally set by tracking scripts such as Google Analytics and social media buttons. In the UK the maximum fine for non-compliance is &pound;500,000. For more information I recommend you have a look at:
+		</p>
+		
+		<ul>
+			<li><a href="http://www.wired.co.uk/news/archive/2012-05/02/cookies-made-simple">A Simple Guide to Cookies by Wired</a></li>
+			<li><a href="http://www.ico.gov.uk/for_organisations/privacy_and_electronic_communications/the_guide/cookies.aspx">ICO Guide to Cookies</a></li>
+			<li><a href="http://nocookielaw.com/">No cookie Law</a></li>
+		</ul>
+		
+		<h5>Plugin Features</h5>
+		<ul>
+			<li>Mode - Allow visitors to either opt in or opt out (implied consent) of cookies by default</li>
+			<li>EU Only - Enable the notification and cookie blocking for visitors within the EU only</li>
+			<li>Shortcode - Use the [cookie_button] shortcode on your policy page to allow visitors to change their preference</li>
+			<li>Linkable - Directly link visitors to a cookie enabled or disabled site by adding ?cookies=on or ?cookies=off to any page</li>
+			<li>Themeable - Easy options for choosing notification colour, position and timeout</li>
+			<li>No Adverts - An additional option to remove your websites adverts</li>
+			<li>CSS - Create your own stylesheet for a completely custom look</li>
+		</ul>
+		
+		<h5>How does it work?</h5>
+		<p>First off we check the IP address of the visitor. If they appear to be outside of the EU then the plugin is not loaded.</p>
+
+		<h6>Opt Out (implied consent) Mode</h6>
+		<p>Your website loads as normal with all cookie setting tools. A notification is shown to the visitor explaining you use cookies. From this notification the visitor can choose to decline cookies or find out more. If they decline cookies the page is reloaded, this time such as Google Analytics, twitter and Facebook social buttons are removed from the page. Their preference is remembered for one year.</p>
+				
+		<h6>Opt In Mode</h6>
+		<p>We scan your sites HTML for scripts and tools that do not comply with the directive, such as Google Analytics, twitter and Facebook social buttons. These scripts are removed from the page and a customisable notification is shown to the user inviting them to "accept cookies". Once they accept cookies the preference is remembered for one year and your cookie setting scripts jump back to life.</p>
+
+		<h5>What does it currently block?</h5>
+		<ul>
+			<li>Google Analytics</li>
+			<li>WordPress.com Stats</li>
+			<li>Twitter Tweet Buttons</li>
+			<li>Tweetmeme</li>
+			<li>Facebook Like Buttons</li>
+			<li>Google+ Buttons</li>
+			<li>StumbleUpon</li>
+			<li>Pinterest</li>
+			<li>Digg</li>
+			<li>ShareThis</li>
+			<li>AddThis</li>
+			<li>Parse.ly</li>
+			<li>KISSmetrics</li>
+			<li>Peerius</li>
+			<li>Clicky</li>
+			<li>Woopra</li>
+			<li>Webtrends</li>
+			<li>Doubleclick / Google Adsense (optional)</li>
+			<li>BuySellAds (optional)</li>		
+			<li>Skimlinks (optional)</li>		
+			<li>Adbrite (optional)</li>				
+		</ul>
+	
+		<h5>But my site uses xxx.js tracker/adverts&hellip;</h5>
+		<p>I'm glad you said that. There are thousands of potential tracking scripts present across the web and they are not particularly easy to locate. I would like to invite you to make suggestions and provide links to other services that set cookies in the <a href="http://codecanyon.net/item/eu-cookie-muncher/discussion/2300176">comments section</a>. I can then extend the checks to remove more third party tools in future.</p>		
+		
+		<h5>How can I test what is setting cookies and if it's working?</h5>
+		<p>There are three things you should do:</p>
+		
+		<ol>
+			<li>View the source of your site with the plugin active. We add a comment to the very bottom indicating how many cookie settings scripts have been removed</li>
+			<li>Install <a href="http://www.ghostery.com/">Ghostery</a> for your browser to highlight tracking scripts as you browse the web</li>
+			<li>Install the <a href="https://addons.mozilla.org/en-US/firefox/addon/web-developer/">Web Developer</a> toolbar to see which scripts are actually settings cookies</li>
+		</ol>
+		
+		<hr>
+
+		<h3 id="installation"><strong>B) Installation</strong> - <a href="#toc">top</a></h3>
+		
+		<p>To install this plugin:</p>
+		<ol>
+			<li>Upload the `cookie-muncher` folder to the `/wp-content/plugins/` directory on your WordPress website</li>
+			<li>Activate the plugin through the 'Plugins' menu in WordPress</li>
+			<li>Tweak the settings in `Settings -> Cookie Muncher` (details below)</li>		
+		</ol>
+		<p>Visit <a href="http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation">WordPress.org for a comprehensive guide</a> on this process and more information on plugins.</p>
+
+		<hr>
+
+		<h3 id="cookie-muncher"><strong>C) Cookie Muncher</strong> - <a href="#toc">top</a></h3>
+		<p><img src="assets/images/wp-admin-menu.jpg" alt="WordPress / Plugin Settings Menu" /></p>
+		<p>From the `Settings -> Cookie Muncher` menu you can customise:</p>
+		
+		<ol>
+			<li><strong>Mode:</strong> Choose if visitors should opt in or opt out of cookies</li>
+			<li><strong>Apply to EU visitors only:</strong> Enable this to use geo location services based on the visitors IP</li>
+			<li><strong>Block Adverts:</strong> Decide if you want to remove adverts as well</li>
+			<li><strong>Message:</strong> Customise the notification message about cookies</li>
+			<li><strong>Link to Page:</strong> If you have a page on your site detailing cookie use (e.g. a Privacy Policy) you can link to it (optional)</li>
+			<li><strong>Link Text:</strong> The link text for the page above</li>
+			<li><strong>Hide Button:</strong> In Opt Out mode you can hide the button to discourage visitors opting out before reading your cookie policy</li>
+			<li><strong>Button Text:</strong> The button text for your 'accept cookies' button</li>
+			<li><strong>Notification Position:</strong> Choose a location on your screen where you want the popup to appear</li>
+			<li><strong>Notification Timeout:</strong> The pop up will auto hide after a certain number of seconds</li>
+			<li><strong>Notification Background Colour:</strong> Choose a background colour for the notification</li>
+			<li><strong>Notification Font Colour:</strong> Choose a font colour for the notification</li>
+			<li><strong>Notification Link Colour:</strong> Choose a link colour for the notification</li>
+			<li><strong>Notification Link Hover Colour:</strong> Choose a link hover colour for the notification</li>
+		</ol>
+
+		<p><img src="assets/images/front-end-demo.jpg" alt="The Cookie popup window from a users perspective" /></p>
+
+		<hr>
+
+		<h3 id="tips"><strong>D) Tips</strong> - <a href="#toc">top</a></h3>
+		<p>A few tips:</p>
+		<ul>
+			<li><strong>Message:</strong> Keep the notification message short and link through to a deeper page detailing cookie use</li>
+			<li><strong>Position:</strong> Ensure the notification position does not cover crucial areas of your site</li>
+			<li><strong>Colour:</strong> Ensure there is plenty of contrast between your colour choices for better usability</li>
+			<li><strong>CSS:</strong> Copy the /assets/css/cookie_muncher.css file to your theme folder to completely customise the look and feel</li>
+			<li><strong>Shortcode:</strong> Use the <strong>[cookie_button enable_text="Cookies ON" disable_text="Cookies OFF"]</strong> shortcode on your policy page to allow visitors to change their settings</li>
+		</ul>
+
+		<hr>
+		
+		<h3 id="changelog"><strong>E) Changelog</strong> - <a href="#toc">top</a></h3>
+
+		<span><strong>Version 1.4 (in progress)</strong></span>
+		<ul>
+			<li>Better support for https:// websites</li>
+		</ul>
+		
+		<span><strong>Version 1.3</strong></span>
+		<ul>
+			<li>Improved shortcode customisation [cookie_button enable_text="Cookies ON" disable_text="Cookies OFF"]</li>
+			<li>Shortcode loaded for front end only</li>
+			<li>Update noty library to 1.2.1</li>
+			<li>Updated default settings</li>
+			<li>Added JavaScript cookie check to improve compatibility with cached sites</li>
+			<li>Added 20 seconds as a timeout option</li>
+			<li>Conditional functions for theme developers: cookies_off() & cookies_on() to provide alternative content depending on state</li>
+			<li>Added Woopra and Webtrends Blocking</li>
+		</ul>
+
+		<span><strong>Version 1.2</strong></span>
+		<ul>
+			<li>Run in implied consent (opt out) mode - please re-save your plugin options after updating</li>
+			<li>New shortcode [cookie_button] to enable visitors to turn cookies on or off, add to your cookie policy page</li>
+			<li>Closing the notification will now stop the pop up showing again (yes it sets a cookie!)</li>
+			<li>Added support for Twitter widgets</li>
+			<li>Made some small tweaks to improve JavaScript compatibility</li>
+			<li>Fixed bug where HTML tags were stripped when saving</li>
+		</ul>
+		
+		<span><strong>Version 1.1</strong></span>
+		<ul>
+			<li>Added check for AJAX request compatibility</li>
+			<li>New service: chart.dk tracking code</li>
+			<li>Updated Facebook to include the Facebook Like Box</li>
+			<li>Added support for the DP Social Share WordPress Plugin</li>
+		</ul>
+		
+		<span><strong>Version 1.0</strong></span>
+		<ul>
+			<li>Initial Release</li>
+		</ul>
+
+		<hr>
+
+		<h3 id="upgrade"><strong>F) Upgrading</strong> - <a href="#toc">top</a></h3>
+		<span>Upgrade advisories:</span>
+		<ul>
+			<li><strong>1.0 or 1.1 &rarr; 1.2</strong> - You will need to update your settings once the plugin has been updated.</li>
+		</ul>
+		
+		<hr>
+		
+		<h3 id="credits"><strong>G) Credits</strong> - <a href="#toc">top</a></h3>
+		<span>This plugin makes use of:</span>
+		<ul>
+			<li><a href="http://needim.github.com/noty/">noty</a> by Nedim Arabacı</li>
+			<li><a href="http://jquery.com/">jQuery</a> by John Resig</li>
+		</ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this plugin. If you have a more general question relating to the plugins on CodeCanyon, you might consider visiting the <a href="http://codecanyon.net/forums?ref=scottsweb">forums</a> and asking your question in the "Item Discussion" section.</p> 
+		<p class="append-bottom alt large"><strong>Scott Evans</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
